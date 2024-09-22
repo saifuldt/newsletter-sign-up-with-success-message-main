@@ -44,8 +44,8 @@ const NewsLetter = ({ onSubscribe }) => {
 
     return (
         <div className=" flex justify-center items-center bg-blue-950 h-[100vh]">
-            <div className="flex flex-col-reverse md:flex-row justify-center items-center bg-white p-4 w-full h-[100vh] md:h-fit md:w-[700px] rounded-xl ">
-                <div className="p-2 space-y-6 md:w-1/2">
+            <div className="flex flex-col-reverse md:flex-row justify-center items-center bg-white p-4 w-full h-[100vh] md:h-fit md:w-[700px] md:rounded-xl ">
+                <div className="pl-2 space-y-6 md:w-1/2 font-bold md:font-normal">
                     <h1 className="text-4xl font-bold text-blue-950">Stay updated!</h1>
                     <p>Join 60,000+ product managers receiving monthly updates on:</p>
                     <div>
@@ -57,7 +57,7 @@ const NewsLetter = ({ onSubscribe }) => {
                                 </div>
                             ))}
                     </div>
-                    <form className="space-y-4" onSubmit={handleSubmit}>
+                    <form className="space-y-4 pb-20 md:pb-20" onSubmit={handleSubmit}>
                         <label htmlFor="email">
                             Email address:
                             {error && <span className="text-red-600 text-sm float-right">{error}</span>}
@@ -79,9 +79,9 @@ const NewsLetter = ({ onSubscribe }) => {
                     </form>
 
                 </div>
-                <div className="md:h-[460px] md:w-1/2 flex  items-center   ">
+                <div className="md:h-[460px] md:w-1/2 w- flex justify-center  items-center   ">
                     <img className="h-[450px] w-[300px] md:block hidden" src={singUp} alt="img" />
-                    <img className=" w-full h-fit md:hidden " src={singUpMobile} alt="img" />
+                    <img className=" w-[100%] h-[100vh] md:hidden -mb-20 " src={singUpMobile} alt="img" />
                 </div>
             </div>
         </div>
