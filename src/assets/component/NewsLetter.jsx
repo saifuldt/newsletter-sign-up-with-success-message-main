@@ -45,10 +45,10 @@ const NewsLetter = ({ onSubscribe }) => {
     return (
         <div className=" flex justify-center items-center bg-blue-950 h-[100vh]">
             <div className="flex flex-col-reverse md:flex-row justify-center items-center bg-white p-4 w-full h-[100vh] md:h-fit md:w-[700px] rounded-xl ">
-                <div className="p-2 space-y-6 w-1/2">
+                <div className="p-2 space-y-6 md:w-1/2">
                     <h1 className="text-4xl font-bold text-blue-950">Stay updated!</h1>
                     <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <div className="">
+                    <div>
                         {
                             contents.map((item) => (
                                 <div key={item.id} className="flex gap-1 text-[14px] py-2 items-center  " >
